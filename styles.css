@@ -1,29 +1,92 @@
-main{
-    border: 5px dotted blue;
-    width: 50vw;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-section{
-    border: 3px dashed green;
+
+body {
+    font-family: 'Lato', sans-serif;
+
 }
-.container {
-    width: 300px;
-    height: 300px;
-    background-color: gainsboro;
-    margin: 100px;
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #3ed8ff,#a8f5ff  );
 }
-.box {
-    width: 100px;
-    height: 100px;
-    
+.inner-box {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: #ffffff69;
+    backdrop-filter: blur(8px);
+    box-shadow: 1px 1px 5px #2773a5;
+    z-index: 1;
 }
-.red {
-    background-color: red;
+.signup-header h1 {
+    font-size: 2.5rem;
+    color: #212121;
 }
-.green {
-    background-color: green;
+.signup-header p{
+    margin-top: 4px;
+    margin-left: 4px ;
+    font-size: 0.8=9rem;
+    color: #555;
+
 }
-.blue {
-    background-color: blue;
+.signup-body {
+    margin: 20px 0px;
 }
-```
-```
+
+.signup-body p{
+    margin: 10px 0px;
+}
+.signup-body p label {
+    display: block;
+    font-weight: bold;
+}
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.signup-body p input[type = 'submit']{
+    background-color: #3498db;
+    border: none;
+    color: white;
+}
+.signup-body p input[type = 'submit']:hover {
+    background-color: #2773a5;
+    cursor: pointer;
+
+}
+.signup-footer p {
+    color : #555;
+    text-align: center;
+}
+.signup-footer p a {
+    color: #2773a5;
+}
+
+.circle{
+    background: linear-gradient(to top right, #ffffffaa, #ffffff);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+.c1{
+    top: 100px;
+    left: 40px;
+}
+.c2 {
+    bottom: 200px;
+    right: 50px;
+}
